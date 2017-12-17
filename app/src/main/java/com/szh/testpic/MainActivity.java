@@ -8,6 +8,9 @@ import com.itheima.retrofitutils.ItheimaHttp;
 import com.itheima.retrofitutils.Request;
 import com.itheima.retrofitutils.listener.HttpResponseListener;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 
@@ -21,8 +24,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        String apiUrl = "/action/apiv2/banner?catalog=1";
+        String apiUrl = "/action/apiv2/banner";
+        Map<String,Object> map = new HashMap<>();
+        map.put("catalog",1);
         Request request = ItheimaHttp.newGetRequest(apiUrl);//apiUrl格式："xxx/xxxxx"
+        request.putParamsMap(map);
         Call call = ItheimaHttp.send(request, new HttpResponseListener<Banner>() {
             @Override
             public void onResponse(Banner bean) {
