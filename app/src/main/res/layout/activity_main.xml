@@ -5,6 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.szh.testpic.MainActivity">
+    <com.itheima.wheelpicker.WheelPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:wheel_atmospheric="true"
+        app:wheel_curved="true"
+        app:wheel_cyclic="true"
+        app:wheel_selected_item_position="5"
+        app:wheel_item_text_color="#66ff0000"
+        app:wheel_selected_item_text_color="#6600ffff"/>
+
+
+    <!--属性解释:
+
+        wheel_atmospheric :  条目颜色是否执行衔接处理 效果更好
+        wheel_curved ： 是否是弧形状态显示
+        wheel_cyclic : 是否可循环
+        wheel_selected_item_position ： 默认选中第几个条目
+        wheel_item_text_color 未选中的条目颜色
+        wheel_selected_item_text_color  选中的条目颜色-->
 
     <TextView
         android:layout_width="wrap_content"
