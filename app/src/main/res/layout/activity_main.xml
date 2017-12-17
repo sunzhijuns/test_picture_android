@@ -5,6 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.szh.testpic.MainActivity">
+    <com.itheima.roundedimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_33"
+        android:scaleType="fitCenter"
+        app:riv_corner_radius="10dip"
+        app:riv_border_width="1dip"
+        app:riv_border_color="#333333"
+        app:riv_oval="true" />
+
+    <!--
+        关键属性解释：
+
+        app:riv_corner_radius ： 四周角度
+        app:riv_border_width ：  描边宽度
+        app:riv_border_color ： 描边颜色
+        app:riv_oval="false"  ： 是否是圆型 ， 若为true， 则上面的radius可不用设置。-->
 
     <TextView
         android:layout_width="wrap_content"
