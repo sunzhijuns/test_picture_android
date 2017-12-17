@@ -3,6 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="actionbar_bg">#FF0099EE</color>
-    <color name="statusbar_bg">#FF0099cc</color>
+    <!--<color name="actionbar_bg">#FF0099EE</color>-->
+    <!--<color name="statusbar_bg">#FF0099cc</color>-->
+    <color name="actionbar_bg">#330000ff</color>
+    <color name="statusbar_bg">#33ff0000</color>
 </resources>
