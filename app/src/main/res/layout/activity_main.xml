@@ -5,8 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.szh.testpic.MainActivity">
+    <Button
+        android:id="@+id/btn_all"
+        android:text="一键获取三个城市的信息"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="center_vertical"
+        android:text="北京的天气"
+        app:layout_constraintTop_toBottomOf="@+id/btn_all"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/tv_szj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="center_vertical"
+        android:text="深圳的天气"
+        app:layout_constraintTop_toBottomOf="@+id/tv_szj"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:id="@+id/tv_szj1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="center_vertical"
+        android:text="上海的天气"
+        app:layout_constraintTop_toBottomOf="@+id/tv_szj1"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:id="@+id/tv_szj2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
+        android:id="@+id/helloworld"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
