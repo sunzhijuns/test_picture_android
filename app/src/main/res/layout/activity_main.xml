@@ -11,6 +11,7 @@
         android:text="greendao lib test" />
     <EditText
         android:id="@+id/et_id"
+        android:inputType="number"
         android:hint="请输入学生id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
